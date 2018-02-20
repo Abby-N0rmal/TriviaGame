@@ -1,0 +1,129 @@
+/*
+ShowDown Plugin
+Style Name: ShowDownPlugin
+Style Author: Hyder Jaffari
+Author URL: http://www.weborithm.com
+Last Update: Januray 23rd, 2012
+*/
+
+.wp-showdown-container:after, .wp-showdown-results:after, #form_arena:after { clear: both; content: " "; display: block; line-height: 0; height: 0; visibility: hidden; }
+.wp-showdown-container {  border-bottom: 1px dashed #eee; margin: 0 0 20px; padding: 20px 0 0; width: 100%; }
+.wp-showdown-container h2, .wp-showdown-results h2 { background: none; border: 0; border-bottom: 1px dashed #eee; font-size: 20px; margin: 0 0 20px; padding: 0 0 20px; text-align: center; }
+.wp-showdown-image { float: left; text-align: center; width: 50%;}
+.wp-showdown-image:hover h3 a { background: url(select.png) no-repeat 0 3px; padding: 0 0 0 25px }
+.wp-showdown-image h3, .wp-showdown-results h3 { background: none; border: 0; font-size: 20px; margin: 0; padding: 0 0 20px; }
+.wp-showdown-draw { float: left; font-size: 14px; padding: 0 0 20px; text-align: center; width: 100%; }
+
+.wp-showdown-results { padding: 0 0 20px 0; width: 100%; }
+.wp-showdown-loser, .wp-showdown-winner, .wp-showdown-drawn { float: left; text-align: center; width: 50%; }
+.wp-showdown-results .attachment-thumbnail { background: none; border: 0; float: none; height: auto; margin: 0; padding: 0; }
+.sidebar .wp-showdown-results .attachment-thumbnail, .aside .wp-showdown-results .attachment-thumbnail { width: 90%; }
+.post .wp-showdown-results .attachment-thumbnail { width: auto; }
+.wp-showdown-results p { background: none; border: 0; color: #999; font-size: 10px; padding: 0; text-transform: uppercase; }
+.wp-showdown-results h3 { padding: 0 0 20px; }
+.wp-showdown-winner h3 span { background: url(winner.png) no-repeat; padding: 2px 0 4px 40px; }
+.wp-showdown-loser h3 span { background: url(loser.png) no-repeat; padding: 2px 0 4px 40px; }
+.wp-showdown-drawn h3 span { background: url(draw.png) no-repeat; padding: 2px 0 4px 40px; }
+
+.wp-showdown-content { padding: 0 0 20px; position: relative; }
+.wp-showdown-content a { display: block;  }
+
+.wp-showdown-content p { padding: 0; }
+.wp-showdown-container .wp-showdown-content p { padding: 0 10px; }
+.wp-showdown-content p a { display: inline; }
+
+.wp-showdown-select { bottom: 10px; display: inline-block; height: 30px; width: 34px; top: auto; position: absolute; z-index: 100; }
+.wp-showdown-content:hover .wp-showdown-select { background: url(select.png); }
+
+.wp-showdown-announcement h2 { background: none; border: 0; font-size: 20px; margin: 0; padding: 20px 0; text-align: center; }
+.wp-showdown-announcement h2 span { background: url(ribbon.png) no-repeat; padding: 15px 0 19px 52px; }
+
+.wp-showdown-stats { padding: 0 0 20px; }
+.wp-showdown-stats p { display: inline-block; padding: 0 20px 0 0; }
+
+p.wp-showdown-caption { color: #999; font-size: 10px; padding: 0; text-transform: uppercase; }
+p.wp-showdown-notvoted { text-align: center; }
+
+/* Hot or Not */
+
+.wp-showdown-hotornot { border-bottom: 1px solid #fafafa; border-top: 1px solid #fafafa; margin: 20px 0; padding: 20px 0; position: relative; }
+.wp-showdown-hotornot .wp-showdown-votehere .wp-showdown-content { padding: 0; }
+
+/* Vote Here */
+
+.wp-showdown-votehere { text-align: center; }
+
+.wp-showdown-votenumbers { margin: 0 0 1px; padding: 0; position: relative; }
+
+.wp-showdown-votenumbers span { color: #fff; display: inline-block; font-size: 11px; margin: 0; padding: 10px 10px 6px; text-transform: uppercase; text-shadow: #000 0 1px; 
+background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+.wp-showdown-votehere ul { border: 1px solid #F9CE0E; border-left: 0; border-right: 0; display: inline-block; list-style: none; margin: 0; padding: 4px 0 4px; text-align: right; background: #ffff88; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffff88 0%, #ffe772 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff88), color-stop(100%,#ffe772)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* IE10+ */
+background: linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffe772',GradientType=0 ); /* IE6-9 */ }
+
+.wp-showdown-votehere ul li { display: inline-block; line-height: normal; padding: 0; }
+.wp-showdown-votehere ul li a { border: 1px solid #F9CE0E; color: #000; font-size: 16px; line-height: normal; margin: 0; padding: 4px 11px 4px; text-shadow: #FFFBC4 0 1px; }
+.wp-showdown-votehere ul li a, .wp-showdown-votehere ul li a:hover { text-decoration: none; }
+
+.wp-showdown-votehere ul li a:hover { background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+ border: 1px solid #000; color: #fff; text-shadow: #000 0 1px; }
+
+.wp-showdown-votehere .wp-showdown-draw { float: none; margin: 20px auto 0; padding: 0; width: 25%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #000; background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */ }
+
+.wp-showdown-votehere .wp-showdown-draw a { color: #fff; display: block; padding: 5px 10px 7px; text-shadow: #000 0 -1px; }
+.wp-showdown-votehere .wp-showdown-draw:hover { border: 1px solid #F9CE0E; background: #ffff88; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffff88 0%, #ffe772 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff88), color-stop(100%,#ffe772)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* IE10+ */
+background: linear-gradient(top,  #ffff88 0%,#ffe772 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffe772',GradientType=0 ); /* IE6-9 */ }
+
+.wp-showdown-votehere .wp-showdown-draw:hover a { color: #000; text-shadow: #FFFBC4 0 1px; }
+
+p.wp-showdown-voteherecaption { font-size: 10px; font-weight: bold; letter-spacing: 0.5px; margin: auto; padding: 0; text-transform: uppercase; }
+
+/* Voted */
+
+.wp-showdown-youvoted { padding: 0 0 20px; text-align: center; }
+.wp-showdown-youvotedimg a { display: block; height: 100px; }
+.wp-showdown-youvoted p.wp-showdown-youvotedvote { font-size: 10px; margin: 0; padding: 0 0 10px; width: auto; }
+.wp-showdown-youvoted p.wp-showdown-youvotedvote span { color: #EA0E0E; font-weight: bold; }
+
+.wp-showdown-youvoted p.wp-showdown-youvotedavg { color: #fff; font-size: 9px; font-weight: bold; letter-spacing: 0.5px; margin: 0 auto; padding: 5px 0; text-align: center; width: 100px; text-shadow: #000 0 -1px; text-transform: uppercase; background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */ }
