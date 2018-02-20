@@ -66,6 +66,23 @@ var correct= 0;
 		correct++
 }
 
+var messages= ["Here's your acceptance letter to Hogwarts!", "You're a wizard Harry!", "You're a Muggle!"];
+var pictures= ["assets/images/win.jpg", "assets/images/wizard.gif", "assets/images/lose.jpg"];
+var range;
+	if (correct >= 0 && correct < 6) {
+		range = 2;
+	}
+	if (correct > 6 && correct <= 10) {
+		range = 1;
+	}
+	if (correct > 10) {
+		range = 0;
+	}
+
+document.getElementById("questions").style.visibility = "hidden";
+
+document.getElementById("message").innerHTML = messages [range];
 document.getElementById("after_submit").style.visibility = "visible";
 document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
+document.getElementById("picture").src = pictures[range];
 }
