@@ -9,16 +9,28 @@ h1{
 	color: #BDB76B;
 }
 
+h2{
+	text-align: center;
+	color: #BDB76B;
+	visibility: visible;
+}
+
 #questions{
 	text-align: center;
 	color: #BDB76B;
+	visibility: hidden;
 }
 
 #after_submit {
 	visibility: hidden;
 	color: #BDB76B;
+	text-align: center;
 }
 
-#button {
+#buttonOne{
+	margin-left: 49%;
+}
+
+#buttonTwo {
 	margin-top: 25px;
 }
