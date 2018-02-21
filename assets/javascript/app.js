@@ -1,11 +1,52 @@
+//For fun I want to add a sound into this file
+	//couldn't get it to work
+
+//this is where I've tried adding in the timer
+//	var counter = 0;
+//	var timeleft = 120;
+
+//converts into minutes and seconds in number format "nf"
+//	function convertSeconds(s) {
+//		var min = floor(s / 60);
+//		var sec = s % 60;
+//		return nf(min, 2) + ':' + nf(sec, 2);
+//	}
+
+//	function setup() {
+//		noCanvas();
+
+//		var timer= select('#timer');
+//		timer.html(convertSeconds(timeleft - counter);
+
+//		var interval = setInterval(timeIt, 1000);
+
+//		function timeIt() {
+//			counter++;
+//			timer.html(convertSeconds(timeleft - counter);
+//			if (counter == timeleft){
+//				clearInterval(interval);
+//				//counter = 0;
+//			}
+//		}
+
+		
+//	}
+
+//The timer was supposed to start onclick with the Maurader's button
+//It needs code to also stop with the Mischeif Managed button at the bottom
+//And when the timer runs out, they player has a score of zero and can no longer play
+
 //This function shows the questions and hides the start button and objective
 function checkOne(){
 	//Tester
 	//alert("You're a wizard harry!");
+
 	document.getElementById("questions").style.visibility = "visible";
+	document.getElementById("timer").style.visibility = "visible"
 	document.getElementById("words").style.visibility = "hidden";
 	document.getElementById("wordstwo").style.visibility = "hidden";
 	document.getElementById("buttonOne").style.visibility = "hidden";
+
 
 }
 
@@ -87,3 +128,8 @@ document.getElementById("after_submit").style.visibility = "visible";
 document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
 document.getElementById("picture").src = pictures[range];
 }
+
+//The document also needs a "try again" button to reset the game without refreshing the page.
+
+// I tried my best, I could make simple timers in a separate document, just couldn't seem to peice it all together.
+// I wish there was more time for this assignment... lol. No pun intended.

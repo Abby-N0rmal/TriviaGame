@@ -17,9 +17,11 @@
 	<h1> <img src= "assets/images/trivia_title.png" height= "200px" width= "500px"></h1>
 	<h2 id="words"> Are you an expert of the wizarding world?</h2> 
 	<h2 id="wordstwo">Click the Maurader's button to find out!</h2>
+	<h2 id= "timer"> 2:00</h2>
 
 	<!--The button that shows the questions and starts the timer-->
 	<input id = "buttonOne" type= "button" value = "I solemnly swear I am up to no good!" onclick= "checkOne();"> 
+	
 	<!--The radio button for mutiple choice (mc) that allow the player to only pick one option-->
 	<form id= "questions" name= "questions">
 		<p><b>1. How old was Harry when he first arrived at Hogwarts?</b></p>
@@ -93,6 +95,7 @@
 		<input type= "radio" id="mc" name= "question12" value= "Patrounses">Use the Patronus charm on them<br>
 		<input type= "radio" id="mc" name= "question12" value= "Feed">Feed them after midnight<br>
 		<input type= "radio" id="mc" name= "question12" value= "Sock">Give them an article of clothing<br>
+		
 		<!--the button that finishes the game and hides all the questions and displays the results-->
 		<input id = "buttonTwo" type= "button" value = "Mischeif Managed!" onclick= "checkTwo();">
 	</form>

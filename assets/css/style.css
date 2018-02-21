@@ -32,6 +32,12 @@ h2{
 	transition-duration: .5s;
 }
 
+#timer{
+	font-family: 'Nanum Myeongjo', serif;
+	color: #BDB76B;
+	visibility: hidden;
+}
+
 #questions{
 	text-align: center;
 	font-family: 'Nanum Myeongjo', serif;
