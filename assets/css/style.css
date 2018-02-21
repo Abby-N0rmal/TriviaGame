@@ -7,16 +7,34 @@ body{
 h1{
 	text-align: center;
 	color: #BDB76B;
+	text-shadow: 12px 12px 10px black;
 }
 
 h2{
 	text-align: center;
 	color: #BDB76B;
-	
+	text-shadow: 12px 12px 10px black;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+#buttonOne{
+	background-color: #BDB76B;
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 12px 12px 10px grey;
+	box-shadow: 10px 10px 20px black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 40.5%;
+	background: linear-gradient(to bottom right, #BDB76B, black);
+	transition-duration: .5s;
 }
 
 #questions{
 	text-align: center;
+	font-family: 'Nanum Myeongjo', serif;
 	color: #BDB76B;
 	visibility: hidden;
 }
@@ -25,12 +43,41 @@ h2{
 	visibility: hidden;
 	color: #BDB76B;
 	text-align: center;
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 24px;
 }
 
-#buttonOne{
-	margin-left: 49%;
-}
 
 #buttonTwo {
-	margin-top: 25px;
+	background-color: #BDB76B;
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 12px 12px 10px grey;
+	box-shadow: 10px 10px 20px black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	background: linear-gradient(to bottom right, #BDB76B, black);
+	margin-top: 20px;
+	transition-duration: .5s;
 }
+
+#buttonOne:hover {
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 12px 12px 10px grey;
+	box-shadow: 10px 10px 20px black;
+	border: 1px solid grey;
+	color: white;
+	background: linear-gradient(to bottom right, black, grey);
+	cursor: pointer;
+}
+
+#buttonTwo:hover {
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 12px 12px 10px grey;
+	box-shadow: 10px 10px 20px black;
+	border: 1px solid grey;
+	color: white;
+	background: linear-gradient(to bottom right, black, grey);
+	cursor: pointer;

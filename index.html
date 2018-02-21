@@ -2,9 +2,11 @@
 <html>
 <head>
 
-	<title> Harry Potter Triva!!!</title>
+	<title> Harry Potter Triva Challenge!!!</title>
 	<!-- CSS -->
 	<link href = "assets/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
 	<!-- Main Game Logic  -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
@@ -14,10 +16,10 @@
 	<!--Fancy Harry Potter title-->
 	<h1> <img src= "assets/images/trivia_title.png" height= "200px" width= "500px"></h1>
 	<h2 id="words"> Are you an expert of the wizarding world?</h2> 
-	<h2 id="wordstwo">Click the Start button to find out!</h2>
+	<h2 id="wordstwo">Click the Maurader's button to find out!</h2>
 
 	<!--The button that shows the questions and starts the timer-->
-	<input id = "buttonOne" type= "button" value = "Start!" onclick= "checkOne();"> 
+	<input id = "buttonOne" type= "button" value = "I solemnly swear I am up to no good!" onclick= "checkOne();"> 
 	<!--The radio button for mutiple choice (mc) that allow the player to only pick one option-->
 	<form id= "questions" name= "questions">
 		<p><b>1. How old was Harry when he first arrived at Hogwarts?</b></p>
@@ -92,7 +94,7 @@
 		<input type= "radio" id="mc" name= "question12" value= "Feed">Feed them after midnight<br>
 		<input type= "radio" id="mc" name= "question12" value= "Sock">Give them an article of clothing<br>
 		<!--the button that finishes the game and hides all the questions and displays the results-->
-		<input id = "buttonTwo" type= "button" value = "I'm finished!" onclick= "checkTwo();">
+		<input id = "buttonTwo" type= "button" value = "Mischeif Managed!" onclick= "checkTwo();">
 	</form>
 
 	<div id= "after_submit">
